@@ -9,10 +9,9 @@ build:
     - ./autogen.sh
     - ./configure
     - make
-  artifacts:
-    cache:
-      paths:
-        - "*.o"
+  cache:
+    paths:
+      - "*.o"
 
 # run tests using the binary built before
 test:

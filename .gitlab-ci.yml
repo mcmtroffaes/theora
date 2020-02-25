@@ -13,7 +13,7 @@ build:
     paths:
       - "*.o"
   tags:
-    - alpine
+    - debian
     - docker
 
 # run tests using the binary built before
@@ -23,6 +23,6 @@ test:
     - make check
     - make distcheck
   tags:
-    - alpine
+    - debian
     - docker
 

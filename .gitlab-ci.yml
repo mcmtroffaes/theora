@@ -12,6 +12,9 @@ build:
   cache:
     paths:
       - "*.o"
+  tags:
+    - alpine
+    - docker
 
 # run tests using the binary built before
 test:
@@ -19,4 +22,7 @@ test:
   script:
     - make check
     - make distcheck
+  tags:
+    - alpine
+    - docker
 

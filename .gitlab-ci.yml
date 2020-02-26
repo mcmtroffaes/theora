@@ -11,19 +11,10 @@ build:
     - ./autogen.sh
     - ./configure
     - make
+    - make distcheck
   cache:
     paths:
       - "*.o"
-  tags:
-    - docker
-    - ovh
-
-# run tests using the binary built before
-test:
-  stage: test
-  script:
-    - make check
-    - make distcheck
   tags:
     - docker
     - ovh

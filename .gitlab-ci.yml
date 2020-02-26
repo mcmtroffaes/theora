@@ -6,7 +6,7 @@ build:
   before_script:
     - apt-get update &&
       apt-get install -y libogg-dev libvorbis-dev libsdl-dev
-        doxygen fig2dev texlive texlive-latex-extras
+        doxygen fig2dev texlive texlive-latex-extra
   script:
     - ./autogen.sh
     - ./configure

@@ -15,7 +15,6 @@ build:
     paths:
       - "*.o"
   tags:
-    - debian
     - docker
 
 # run tests using the binary built before
@@ -25,6 +24,5 @@ test:
     - make check
     - make distcheck
   tags:
-    - debian
     - docker
 

@@ -16,6 +16,7 @@ build:
       - "*.o"
   tags:
     - docker
+    - ovh
 
 # run tests using the binary built before
 test:
@@ -25,4 +26,4 @@ test:
     - make distcheck
   tags:
     - docker
-
+    - ovh

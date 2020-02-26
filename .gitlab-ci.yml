@@ -4,7 +4,9 @@ image: gcc
 build:
   stage: build
   before_script:
-    - apt update && apt -y install libogg-dev libvorbis-dev libsdl-dev pdflatex transfig
+    - apt-get update &&
+      apt-get install -y libogg-dev libvorbis-dev libsdl-dev
+        doxygen fig2dev texlive texlive-latex-extras
   script:
     - ./autogen.sh
     - ./configure

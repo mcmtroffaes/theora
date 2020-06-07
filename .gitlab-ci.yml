@@ -18,3 +18,10 @@ build:
   tags:
     - docker
     - ovh
+
+cmake:
+  stage: build
+  script:
+    - cd win32/VS2010; msbuild
+  tags:
+    - windows

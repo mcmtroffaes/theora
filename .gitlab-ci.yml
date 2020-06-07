@@ -17,7 +17,6 @@ build:
       - "*.o"
   tags:
     - docker
-    - ovh
 
 cmake:
   stage: build

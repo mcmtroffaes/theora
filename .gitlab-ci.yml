@@ -1,5 +1,8 @@
-# Image from https://hub.docker.com/_/gcc/ based on Debian
-image: gcc
+default:
+  tags:
+    - docker
+  # Image from https://hub.docker.com/_/gcc/ based on Debian
+  image: gcc:9
 
 build:
   stage: build
@@ -12,9 +15,3 @@ build:
     - ./configure
     - make
     - make distcheck
-  cache:
-    paths:
-      - "*.o"
-  tags:
-    - docker
-    - ovh

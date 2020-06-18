@@ -8,7 +8,8 @@ build:
   stage: build
   before_script:
     - apt-get update &&
-      apt-get install -y libogg-dev libvorbis-dev libsdl-dev
+      apt-get install -y libogg-dev libvorbis-dev
+        libsdl-dev libpng-dev libtiff-dev
         doxygen fig2dev texlive texlive-latex-extra
   script:
     - ./autogen.sh
